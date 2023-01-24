@@ -2,6 +2,7 @@
   /* py-10 flex flex-col items-center */
 
   /* padding: 0 10px; */
+  /* color: var(--color-white) !important; */
   display: flex;
   flex-direction: column;
   align-items: center;

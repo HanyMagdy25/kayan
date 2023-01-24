@@ -4,6 +4,7 @@ import "./ContactUsForm.css";
 // const url_main = "http://q-tap-dashboard.technomasrsystems.com";
 function ContactUsForm({ lang }) {
   const [name, setName] = useState("");
+  const [age, setAge] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [text, setText] = useState("");
@@ -55,8 +56,14 @@ function ContactUsForm({ lang }) {
             onChange={(e) => setName(e.target.value)}
           />
           <input
+            type="text"
+            placeholder="العمر (اخنيارى)"
+            value={age}
+            onChange={(e) => setAge(e.target.value)}
+          />
+          <input
             type="email"
-            placeholder="البريد الالكترونى"
+            placeholder="البريد الالكترونى (اخنيارى)"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -73,7 +80,7 @@ function ContactUsForm({ lang }) {
             onChange={(e) => setText(e.target.value)}
           />
           <button type="submit" className="btn btn-custom">
-            إرسال
+            تواصل معنا
           </button>
           {done === "success" && (
             <p className="contact__done mt-2">تم الارسال بنجاح</p>

@@ -4,6 +4,7 @@
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  color: var(--color-white) !important;
 }
 .contact__darker {
   background-color: rgba(0, 0, 0, 0.4);
