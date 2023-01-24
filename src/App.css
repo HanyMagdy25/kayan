@@ -1,10 +1,32 @@
-.btn-custom{
-    background-color: var(--color-btn) !important;
-    color: var(--color-white) !important;
-    width: 100% !important;
-    border-radius: 3px !important;
-
+.btn-custom {
+  background-color: var(--color-btn) !important;
+  color: var(--color-white) !important;
+  width: 100% !important;
+  border-radius: 3px !important;
 }
-.btn-custom:hover{
-    background-color: var(--color-btn-hover) !important;
+.btn-custom:hover {
+  background-color: var(--color-btn-hover) !important;
+}
+.main__title-div {
+  /* color: #bababa; */
+  /* color: var(--color-title); */
+  line-height: 1.2;
+  position: relative;
+}
+.main__title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.main__title-div:after {
+  zoom: 1;
+  display: inline-block;
+  position: absolute;
+  content: "";
+  left: 50%;
+  width: 100px;
+  height: 4px;
+  background: var(--color-btn);
+  top: 115%;
+  transform: translate(-50%, -50%);
 }

@@ -10,7 +10,7 @@
   --color-yellow: #842022;
   --color-whats: #25d366;
   /* EL Shrouk Colors */
-  --color-bg: #7a0606;
+  --color-bg: #f0f0f0;
   --color-text: #646363;
   --color-title: #221447;
   --color-title-hover: #402b77;
@@ -31,7 +31,7 @@ html {
 }
 body {
   margin: 0;
-  background: var(--color-white) !important;
+  background: var(--color-bg) !important;
   /* color: var(--color-white) !important; */
   overflow-x: hidden;
   direction: rtl;
