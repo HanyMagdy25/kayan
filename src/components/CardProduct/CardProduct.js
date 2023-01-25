@@ -15,7 +15,7 @@ const CardProduct = ({ item }) => {
 
       <div className="p-3">
         <h2 className="productCard__title">{item.title}</h2>
-        <p className="productCard__content"> {truncate(item.content, 100)}</p>
+        <p className="productCard__content"> {truncate(item.description, 100)}</p>
       </div>
     </div>
   );
