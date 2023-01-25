@@ -10,12 +10,13 @@
   --color-yellow: #842022;
   --color-whats: #25d366;
   /* EL Shrouk Colors */
-  --color-bg: #f0f0f0;
+  --color-bg: #eaeff1;
   --color-text: #646363;
   --color-title: #221447;
   --color-title-hover: #402b77;
   --color-footer: #5a6498;
-  --color-wecare: #475a77;
+  --color-kayan: #444d5e;
+  --color-kayan-bg: #f4e5df;
   --color-btn: #ff9100; 
   --color-btn-hover: #fca639; 
 }
@@ -31,7 +32,7 @@ html {
 }
 body {
   margin: 0;
-  background: var(--color-bg) !important;
+  background: var(--color-kayan-bg) !important;
   /* color: var(--color-white) !important; */
   overflow-x: hidden;
   direction: rtl;

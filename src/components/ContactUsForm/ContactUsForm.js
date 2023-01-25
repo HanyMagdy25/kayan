@@ -5,6 +5,7 @@ import "./ContactUsForm.css";
 function ContactUsForm({ lang }) {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
+  const [address, setAddress] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [text, setText] = useState("");
@@ -56,10 +57,22 @@ function ContactUsForm({ lang }) {
             onChange={(e) => setName(e.target.value)}
           />
           <input
+            type="tel"
+            placeholder="رقم الهاتف"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+          />
+          <input
             type="text"
             placeholder="العمر (اخنيارى)"
             value={age}
             onChange={(e) => setAge(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="العنوان (اخنيارى)"
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
           />
           <input
             type="email"
@@ -67,12 +80,7 @@ function ContactUsForm({ lang }) {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <input
-            type="tel"
-            placeholder="رقم الهاتف"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-          />
+
           <textarea
             placeholder="رسالتك"
             rows={4}

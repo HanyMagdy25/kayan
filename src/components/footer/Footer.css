@@ -1,0 +1,16 @@
+footer {
+  background-color: var(--color-kayan);
+  color: var(--color-white);
+  padding: 5px;
+}
+footer h6 {
+  padding-bottom: 0 !important;
+}
+footer h6 a {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+footer h6 a:hover {
+  color: var(--color-btn);
+}

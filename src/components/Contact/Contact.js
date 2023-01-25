@@ -1,6 +1,6 @@
 import ContactUsForm from "../ContactUsForm/ContactUsForm";
 import "./Contact.css";
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/logo.png";
 
 function Contact() {
   return (
@@ -25,7 +25,7 @@ function Contact() {
                 <button></button>
               </div>
             </div>
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-6 mt-lg-5">
               <div className="col-12 text-center d-flex contact__form-div">
                 <ContactUsForm />
               </div>

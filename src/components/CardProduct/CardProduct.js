@@ -1,4 +1,4 @@
-import "./CardProduct.css"
+import "./CardProduct.css";
 import { Link } from "react-router-dom";
 
 const CardProduct = ({ item }) => {
@@ -13,9 +13,9 @@ const CardProduct = ({ item }) => {
         </div>
       </Link>
 
-      <div>
-        <h2>{item.title}</h2>
-        <h3 className="mt-3 productCard__title"> {truncate(item.title, 70)}</h3>
+      <div className="p-3">
+        <h2 className="productCard__title">{item.title}</h2>
+        <p className="productCard__content"> {truncate(item.content, 100)}</p>
       </div>
     </div>
   );
