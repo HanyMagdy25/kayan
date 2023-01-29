@@ -3,9 +3,9 @@ import "./ContactUsForm.css";
 
 const url_main = "https://kayan-dashboard.kayanhillscrm.com";
 
-function ContactUsForm({ lang }) {
+function ContactUsForm() {
   const [name, setName] = useState("");
-  const [age, setAge] = useState(null);
+  const [age, setAge] = useState();
   const [address, setAddress] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -35,7 +35,6 @@ function ContactUsForm({ lang }) {
       .then((res) => {
         // setDone(res.status);
 
-        console.log("res", res);
         if (res.status === "success") {
           setName("");
           setPhone("");
@@ -56,11 +55,7 @@ function ContactUsForm({ lang }) {
   return (
     <div className="ContactUsForm col-12 col-lg-8 ">
       <div className="contactUs__container">
-        <div className="flex-center">
-          <div className="main__title-div">
-            <h2 className="main__title">ابقى على اتصال</h2>
-          </div>
-        </div>
+       
         <form className="contactUs__form" onSubmit={handleContact}>
           <input
             type="text"

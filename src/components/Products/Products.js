@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
-import { productsData } from "../../utils/data";
 import CardProduct from "../CardProduct/CardProduct";
 const url_main = "https://kayan-dashboard.kayanhillscrm.com";
 
@@ -24,9 +23,7 @@ function Products({ loadingProducts, mainPageData }) {
         setBoxesData(data.data);
       });
   }, []);
-  console.log(mainPageData);
 
-  console.log(boxesData);
 
   return (
     <div className="products pb-5">
