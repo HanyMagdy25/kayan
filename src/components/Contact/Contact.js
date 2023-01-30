@@ -20,7 +20,7 @@ function Contact({ loadingProducts, mainPageData }) {
                   <div className="mt-5 contact__content">
                     <h1>{mainPageData.mainPage.title}</h1>
                     <p>{mainPageData.mainPage.description}</p>
-                    <button></button>
+                    
                   </div>
                 </>
               )}

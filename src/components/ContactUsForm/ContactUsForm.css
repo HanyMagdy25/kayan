@@ -35,6 +35,33 @@
 .contactUs__form textarea::placeholder {
   font-size: 15px;
 }
+.need-question{
+  width: 100%;
+}
+.need-question select{
+  background: var(--color-light-input) !important;
+  outline: none !important;
+  width: 100% !important;
+  border-radius: 3px !important;
+  padding: 6px 10px !important;
+  color: var(--color-kayan) !important;
+}
+.need-question select option{
+  background: var(--color-light-input) !important;
+  color: var(--color-kayan) !important;
+}
+.need-question .form-select:focus {
+  border-color: var(--color-light-input) !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.need-question label{
+  text-align: center !important;
+  width: 100% !important;
+}
+.btn:disabled, fieldset:disabled {
+ border: none !important;
+}
 
 @media screen and (max-width: 600px) {
   .contactUs__form input,
